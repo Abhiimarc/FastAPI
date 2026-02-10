@@ -1,0 +1,12 @@
+name: build and deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: say hi toh abhishek
+        run: echo "hi Abhishek"
+        
