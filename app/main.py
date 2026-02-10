@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from random import randrange
 from . import models
 from .database import *
 from . routers import posts, users, auth, vote
@@ -23,4 +22,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 def read_root():
-    return {"Hello": "What's up!"}
+    return {"api is up and running"}
